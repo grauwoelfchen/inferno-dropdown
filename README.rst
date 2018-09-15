@@ -12,6 +12,14 @@ Inferno Dropdown
 A dropdown for tree using [Inferno](https://www.infernojs.org/).
 
 
+Repository
+----------
+
+`grauwoelfchen/inferno-dropdown`_ (GitLab.com)
+
+.. _`grauwoelfchen/inferno-dropdown`: https://gitlab.com/grauwoelfchen/inferno-dropdown
+
+
 Usage
 -----
 
