@@ -1,0 +1,62 @@
+{
+  "name": "inferno-dropdown",
+  "version": "0.0.1",
+  "description": "A dropdown for tree using Inferno",
+  "main": "./dst/index.js",
+  "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
+  "license": "MIT",
+  "homepage": "https://gitlab.com/grauwoelfchen/inferno-dropdown",
+  "scripts": {
+    "test": "./test/run-unit.js test/unit/**/*-test.js | faucet",
+    "prekarma": "./test/prepare-karma.sh",
+    "karma": "./node_modules/.bin/karma start karma.conf.js",
+    "lint": "./node_modules/.bin/eslint",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "keywords": [
+    "inferno",
+    "tree",
+    "dropdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/grauwoelfchen/inferno-dropdown.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/grauwoelfchen/inferno-dropdown/issues"
+  },
+  "files": [
+    "dst",
+    "src"
+  ],
+  "dependencies": {
+    "inferno-hyperscript": "^5.6.1",
+    "inferno-shared": "^5.6.1"
+  },
+  "peerDependencies": {
+    "inferno": ">=5"
+  },
+  "devDependencies": {
+    "browserify": "16.2.2",
+    "buble-register": "1.0.1",
+    "eslint": "5.6.0",
+    "faucet": "0.0.1",
+    "inferno": "5.6.1",
+    "karma": "3.0.0",
+    "karma-firefox-launcher": "1.1.0",
+    "karma-rollup-preprocessor": "6.0.1",
+    "karma-tap": "4.1.4",
+    "karma-tap-pretty-reporter": "4.1.0",
+    "reify": "0.17.3",
+    "rollup": "^0.65.2",
+    "rollup-plugin-buble": "0.19.2",
+    "rollup-plugin-commonjs": "9.1.6",
+    "rollup-plugin-node-builtins": "2.1.2",
+    "rollup-plugin-node-globals": "1.4.0",
+    "rollup-plugin-node-resolve": "3.4.0",
+    "rollup-plugin-replace": "2.0.0",
+    "rollup-plugin-uglify": "5.0.2",
+    "tape": "4.9.1"
+  }
+}

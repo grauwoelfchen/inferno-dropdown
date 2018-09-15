@@ -1,0 +1,17 @@
+/package-lock.json
+
+/node_modules
+/dst
+
+/.tool/gitlab-runner
+/.reify-cache
+/.env.ci
+
+/venv
+
+/test/build/*
+
+# example
+/example/node_modules
+/example/dst
+/example/package-lock.json
