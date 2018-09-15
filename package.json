@@ -1,11 +1,11 @@
 {
-  "name": "inferno-dropdown",
+  "name": "inferno-tree-select",
   "version": "0.0.1",
-  "description": "A dropdown for tree using Inferno",
+  "description": "A select for tree using Inferno",
   "main": "./dst/index.js",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
   "license": "MIT",
-  "homepage": "https://gitlab.com/grauwoelfchen/inferno-dropdown",
+  "homepage": "https://gitlab.com/grauwoelfchen/inferno-tree-select",
   "scripts": {
     "test": "./test/run-unit.js test/unit/**/*-test.js | faucet",
     "prekarma": "./test/prepare-karma.sh",
@@ -17,14 +17,15 @@
   "keywords": [
     "inferno",
     "tree",
+    "select",
     "dropdown"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/grauwoelfchen/inferno-dropdown.git"
+    "url": "git+https://gitlab.com/grauwoelfchen/inferno-tree-select.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/grauwoelfchen/inferno-dropdown/issues"
+    "url": "https://gitlab.com/grauwoelfchen/inferno-tree-select/issues"
   },
   "files": [
     "dst",

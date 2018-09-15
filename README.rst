@@ -1,15 +1,15 @@
-Inferno Dropdown
-=================
+Inferno Tree Select
+===================
 
 |pipeline| |version|
 
-.. |pipeline| image:: https://gitlab.com/grauwoelfchen/inferno-dropdown/badges/master/pipeline.svg
-   :target: https://gitlab.com/grauwoelfchen/inferno-dropdown/commits/master
+.. |pipeline| image:: https://gitlab.com/grauwoelfchen/inferno-tree-select/badges/master/pipeline.svg
+   :target: https://gitlab.com/grauwoelfchen/inferno-tree-select/commits/master
 
-.. |version| image:: https://img.shields.io/npm/v/inferno-dropdown.svg
-   :target: https://www.npmjs.com/package/inferno-dropdown
+.. |version| image:: https://img.shields.io/npm/v/inferno-tree-select.svg
+   :target: https://www.npmjs.com/package/inferno-tree-select
 
-A dropdown for tree using Inferno_.
+A select for tree using Inferno_.
 
 .. _`Inferno`: https://www.infernojs.org/
 
@@ -17,9 +17,9 @@ A dropdown for tree using Inferno_.
 Repository
 ----------
 
-`grauwoelfchen/inferno-dropdown`_ (GitLab.com)
+`grauwoelfchen/inferno-tree-select`_ (GitLab.com)
 
-.. _`grauwoelfchen/inferno-dropdown`: https://gitlab.com/grauwoelfchen/inferno-dropdown
+.. _`grauwoelfchen/inferno-tree-select`: https://gitlab.com/grauwoelfchen/inferno-tree-select
 
 
 Usage
@@ -32,14 +32,14 @@ See `example` about detail of usage as Component.
    import {render} from 'inferno';
    import {h} from 'inferno-hyperscript';
 
-   import DropDown from 'inferno-dropdown';
+   import TreeSelect from 'inferno-tree-select';
 
    class MyComponent extedns Component {
       ...
 
       render() {
          const { data } = this.state;
-         return h(DropDown, {data});
+         return h(TreeSelect, {data});
       }
    }
 
@@ -95,5 +95,5 @@ See `LICENSE`_
 
 .. code:: text
 
-   Inferno Dropdown
+   Inferno Tree Select
    Copyright (c) 2018 Yasuhiro Asaka
