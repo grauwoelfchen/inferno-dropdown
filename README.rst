@@ -9,7 +9,9 @@ Inferno Dropdown
 .. |version| image:: https://img.shields.io/npm/v/inferno-dropdown.svg
    :target: https://www.npmjs.com/package/inferno-dropdown
 
-A dropdown for tree using [Inferno](https://www.infernojs.org/).
+A dropdown for tree using Inferno_.
+
+.. _`Inferno`: https://www.infernojs.org/
 
 
 Repository
@@ -87,7 +89,7 @@ License
 This program is free software: you can redistribute it and/or modify it
 under the terms of the MIT License.
 
-See `LICENSE_`
+See `LICENSE`_
 
 .. _`LICENSE`: LICENSE
 
