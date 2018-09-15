@@ -51,10 +51,9 @@ module.exports = (config) => {
   , rollupPreprocessor: {
       output: {
         format: 'iife'
-      , name: 'vergil'
+      , name: 'inferno-tree-select'
       , sourcemap: false
-      // rollup fix
-      , globals: {
+      , globals: { // rollup fix
           'tape': 'tape'
         }
       }
@@ -73,8 +72,7 @@ module.exports = (config) => {
       , buble()
       , commonjs()
       ]
-    // rollup fix
-    , external: ['tape']
+    , external: ['tape'] // rollup fix
     }
   , tapReporter: {
       prettify: faucet
