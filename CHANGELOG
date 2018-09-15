@@ -1,3 +1,4 @@
 Sat 15 Sep 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Update README.rst -> README.md (nmpjs.com supports only `.md` for README)
 	* Change rollup-plugin uglify -> terser for (es6+ syntax)
 	* Initial commit ;)
