@@ -51,7 +51,7 @@ module.exports = (config) => {
   , rollupPreprocessor: {
       output: {
         format: 'iife'
-      , name: 'inferno-tree-select'
+      , name: 'inferno_tree_select'
       , sourcemap: false
       , globals: { // rollup fix
           'tape': 'tape'
