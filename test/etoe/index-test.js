@@ -1,8 +1,7 @@
 import { test } from 'tape';
 
-import { h } from 'inferno-hyperscript';
-
 import '../../dst/index';
+
 
 test('TODO', (t) => {
   t.plan(2);
