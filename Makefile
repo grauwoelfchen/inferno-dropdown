@@ -33,6 +33,10 @@ guard:  ## Start watch process for build using rollup
 	npm run watch
 .PHONY: guard
 
+guard\:test:  ## Start watch process for browser tests using karma
+	npm run karma -- --auto-watch --no-single-run
+.PHONY: guard\:test
+
 help:  ## Display this message
 	@grep -E '^[0-9a-z\:\\]+: ' $(MAKEFILE_LIST) | grep -E '  ## ' | \
 	  sed -e 's/\(\s|\(\s[0-9a-z\:\\]*\)*\)  /  /' | tr -d \\\\ | \
