@@ -30,8 +30,11 @@ class MyComponent extedns Component {
   ...
 
   render() {
-     const { data } = this.state;
-     return h(TreeSelect, {data});
+     const { options } = this.state;
+     return h(TreeSelect, {
+       options
+     , onSelect: (node) => { console.log(node); }
+     });
   }
 }
 ```
