@@ -1,0 +1,17 @@
+[{
+  "id": "1",
+  "label": "foo",
+  "children": [{
+    "id": "2",
+    "label": "bar",
+    "children": [{
+      "id": "4",
+      "label": "qux",
+      "children": []
+    }]
+  }]
+}, {
+  "id": "3",
+  "label": "baz",
+  "children": []
+}]
