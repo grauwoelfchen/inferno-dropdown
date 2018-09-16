@@ -7,12 +7,9 @@ import { h } from 'inferno-hyperscript';
 
 import Input from '../../src/input';
 
-
 configure({adapter: new Adapter()});
 
 test('Input props', (t) => {
-  t.plan(4);
-
   let output;
 
   output = h(Input);
@@ -29,14 +26,16 @@ test('Input props', (t) => {
 
   wrapper = mount(h(Input, {data}));
   t.equal(wrapper.props().data, data);
+
+  t.end();
 });
 
 test('Input renders ul', (t) => {
-  t.plan(1);
-
   const data = [{}];
   const wrapper = mount(h(Input, {data}));
 
   const ul = wrapper.find('ul.tag-list');
   t.assert(ul.is('.tag-list'));
+
+  t.end();
 });
