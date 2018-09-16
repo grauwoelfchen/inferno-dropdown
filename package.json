@@ -1,6 +1,6 @@
 {
   "name": "inferno-tree-select",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A select for tree using Inferno",
   "main": "./dst/index.js",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
