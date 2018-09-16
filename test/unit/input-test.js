@@ -34,8 +34,8 @@ test('Input renders ul', (t) => {
   const data = [{}];
   const wrapper = mount(h(Input, {data}));
 
-  const ul = wrapper.find('ul.tag-list');
-  t.assert(ul.is('.tag-list'));
+  const tag = wrapper.find('input');
+  t.assert(tag.is('input'));
 
   t.end();
 });
