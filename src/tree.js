@@ -8,7 +8,7 @@ class Tree extends Component {
     super(props);
 
     this.state = {
-      items: this.props.items
+      items: props.items ? props.items : []
     };
   }
 

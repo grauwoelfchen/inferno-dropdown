@@ -4,9 +4,12 @@ import { h } from 'inferno-hyperscript';
 function handleClickOnMark(instance, event) {
   let prev = instance.state;
 
-  instance.setState({
-    expand: instance.state.node.children.length > 0 && !instance.state.expand
-  });
+  const node = instance.state.node;
+  if (node && node.children) {
+    instance.setState({
+      expand: node.children.length > 0 && !instance.state.expand
+    });
+  }
 
   // stop bubbles
   event.stopImmediatePropagation();
@@ -41,7 +44,7 @@ class TreeNode extends Component {
     const node = this.state.node;
     let children = null;
     if (!this.state.expand) {
-      if (node.children.length > 0) {
+      if (node.children && node.children.length > 0) {
         children = h('span', null, [
           h('span.mark', {
             onClick: linkEvent(this, handleClickOnMark)
