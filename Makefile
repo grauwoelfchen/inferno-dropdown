@@ -33,14 +33,18 @@ guard:  ## Start watch process for build using rollup
 	npm run watch
 .PHONY: guard
 
-guard\:test:  ## Start watch process for browser tests using karma
-	npm run karma -- --auto-watch --no-single-run
-.PHONY: guard\:test
+guard\:test\:unit:  ## Start watch process for unit tests using tape
+	npm run watch:test:unit
+.PHONY: guard\:test\:unit
+
+guard\:test\:etoe:  ## Start watch process for browser tests using karma
+	npm run watch:test:etoe
+.PHONY: guard\:test\:etoe
 
 help:  ## Display this message
 	@grep -E '^[0-9a-z\:\\]+: ' $(MAKEFILE_LIST) | grep -E '  ## ' | \
 	  sed -e 's/\(\s|\(\s[0-9a-z\:\\]*\)*\)  /  /' | tr -d \\\\ | \
-	  awk 'BEGIN {FS = ":  ## "}; {printf "\033[36m%-11s\033[0m %s\n", $$1, $$2}' | \
+	  awk 'BEGIN {FS = ":  ## "}; {printf "\033[36m%-17s\033[0m %s\n", $$1, $$2}' | \
 	  sort
 .PHONY: help
 

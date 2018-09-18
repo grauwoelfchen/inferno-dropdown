@@ -7,12 +7,14 @@
   "license": "MIT",
   "homepage": "https://gitlab.com/grauwoelfchen/inferno-tree-select",
   "scripts": {
-    "test": "./test/run-unit.js test/unit/**/*-test.js | faucet",
     "prekarma": "./test/prepare-karma.sh",
     "karma": "./node_modules/.bin/karma start karma.conf.js",
     "lint": "./node_modules/.bin/eslint",
+    "test": "./test/run-unit.js test/unit/**/*-test.js | faucet",
     "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "watch:build": "rollup -c -w",
+    "watch:test:etoe": "npm run karma -- --auto-watch --no-single-run",
+    "watch:test:unit": "./node_modules/.bin/tape-watch -r reify -r buble-register test/unit/**/*-test.js | faucet"
   },
   "keywords": [
     "inferno",
@@ -64,6 +66,7 @@
     "rollup-plugin-node-resolve": "3.4.0",
     "rollup-plugin-replace": "2.0.0",
     "rollup-plugin-terser": "2.0.2",
-    "tape": "4.9.1"
+    "tape": "4.9.1",
+    "tape-watch": "^2.3.0"
   }
 }
