@@ -24,7 +24,7 @@ See `example` about detail of usage as Component.
 import { render } from 'inferno';
 import { h } from 'inferno-hyperscript';
 
-import TreeSelect from 'inferno-tree-select';
+import { TreeSelect } from 'inferno-tree-select';
 
 class MyComponent extedns Component {
   ...
