@@ -1,6 +1,6 @@
 Sun 16 Sep 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Release 0.0.2
-	* Add Tree and TreeNodeh
+	* Add Tree and TreeNode
 
 Sat 15 Sep 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Update README.rst -> README.md (nmpjs.com supports only `.md` for README)
