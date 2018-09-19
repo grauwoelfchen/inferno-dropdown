@@ -30,7 +30,7 @@ build:  ## Bundle all into dst using rollup
 # -- utils
 
 guard:  ## Start watch process for build using rollup
-	npm run watch
+	npm run watch:build
 .PHONY: guard
 
 guard\:test\:unit:  ## Start watch process for unit tests using tape
