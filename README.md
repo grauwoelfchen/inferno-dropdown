@@ -35,10 +35,39 @@ class MyComponent extedns Component {
      const { options } = this.state;
      return h(TreeSelect, {
        options
+     , selected: '4'
      , onSelect: (node) => { console.log(node); }
      });
   }
 }
+```
+
+### Tree data
+
+A node must have `label`, `value` and `children`.
+
+```javascript
+[{
+  "label": "foo",
+  "value": "1",
+  "children": [{
+    "label": "bar",
+    "value": "2",
+    "children": [{
+      "label": "qux",
+      "value": "4",
+      "children": []
+    }, {
+      "label": "quux",
+      "value": "5",
+      "children": []
+    }]
+  }]
+}, {
+  "label": "baz",
+  "value": "3",
+  "children": []
+}]
 ```
 
 ## Development
