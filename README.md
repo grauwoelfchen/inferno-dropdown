@@ -9,6 +9,8 @@
 
 A select for tree using [Inferno](https://www.infernojs.org/).
 
+[![sample select](img/inferno-tree-select-v0.0.3.png)](img/inferno-tree-select-v0.0.3.png)
+
 
 ## Repository
 
