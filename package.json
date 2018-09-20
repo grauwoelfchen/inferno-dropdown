@@ -30,8 +30,7 @@
     "url": "https://gitlab.com/grauwoelfchen/inferno-tree-select/issues"
   },
   "files": [
-    "dst",
-    "src"
+    "dst"
   ],
   "dependencies": {
     "inferno-hyperscript": "^5.6.1",
