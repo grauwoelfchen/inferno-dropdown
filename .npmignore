@@ -13,6 +13,8 @@ Makefile
 
 /example
 
+/src
+
 /.tool
 /.reify-cache
 
