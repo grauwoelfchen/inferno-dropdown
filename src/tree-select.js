@@ -55,10 +55,6 @@ class TreeSelect extends Component {
   constructor(props) {
     super(props);
 
-    const selected = props.selected;
-    // TODO
-    // find node by selected value
-
     this.state = {
       dropdown: false
     , focused: false
@@ -76,11 +72,28 @@ class TreeSelect extends Component {
   }
 
   render() {
+    const options = this.state.options;
+
+    const selected = this.props.selected || null;
+
+    if (this.state.currentNode === null && selected !== null) {
+      let node = null;
+      for (let i in options) {
+        if (Object.prototype.hasOwnProperty.call(options, i)) {
+          let option = options[i];
+          if (option.value.toString() === selected.toString()) {
+            this.state.currentNode = option;
+            break;
+          }
+        }
+      }
+    }
+
     let content = [
       h('a', {
         onClick: linkEvent(this, handleClick)
       }, h(Input, {
-        options: this.state.options
+        options
       , onFocusIn: linkEvent(this, handleFocusIn)
       , onFocusOut: linkEvent(this, handleFocusOut)
       }))
