@@ -51,6 +51,21 @@ function handleFocusOut(instance, event) {
   console.log(event);
 }
 
+// find node from itself and children, recursively
+function findNode(node, value) {
+  if (node.value === value) {
+    return node;
+  } else if (node.children !== null) {
+    let i
+      , result = null;
+    for (let i = 0; result === null && i < node.children.length; i++) {
+      result = findNode(node.children[i], value);
+    }
+    return result;
+  }
+  return null;
+}
+
 class TreeSelect extends Component {
   constructor(props) {
     super(props);
@@ -80,9 +95,9 @@ class TreeSelect extends Component {
       let node = null;
       for (let i in options) {
         if (Object.prototype.hasOwnProperty.call(options, i)) {
-          let option = options[i];
-          if (option.value.toString() === selected.toString()) {
-            this.state.currentNode = option;
+          node = findNode(options[i], selected.toString());
+          if (node !== null) {
+            this.state.currentNode = node;
             break;
           }
         }

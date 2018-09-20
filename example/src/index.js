@@ -14,7 +14,7 @@ class MyComponent extends Component {
       h('.version', 'version: ' + version)
     , h(TreeSelect, {
         options
-      , selected: '1'
+      , selected: '4'
       , onSelect: (node) => {
           // eslint-disable-next-line no-console
           console.log(node);
