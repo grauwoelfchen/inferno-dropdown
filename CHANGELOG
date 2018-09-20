@@ -1,4 +1,5 @@
 Thu 20 Sep 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Release 0.0.5
 	* Make current node selection to work with nested tree
 	* Remove files from release build which are in src directory
 	* Release 0.0.4
